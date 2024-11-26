@@ -1,5 +1,5 @@
 
-import hero from '../assets/videos/hero.mp4'
+import React from "react";
 
 
 const Header = () => {
