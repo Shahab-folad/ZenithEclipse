@@ -1,6 +1,6 @@
-// import dedication from '../assets/images/Dedication-to-Excellence.png'
-// import harvest from '../assets/images/Harvest-Season-.png'
-// import sustainableFarming from '../assets/images/Sustainable-Farming.png'
+import dedication from '../assets/images/Dedication-to-Excellence.png'
+import harvest from '../assets/images/Harvest-Season-.png'
+import sustainableFarming from '../assets/images/Sustainable-Farming.png'
 
 // import wheat from '../assets/images/wheat.png'
 // import demo from '../assets/images/demo.mp4'
