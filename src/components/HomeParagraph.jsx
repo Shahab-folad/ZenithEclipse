@@ -14,7 +14,7 @@ function HomeParagraph(){
                 From seed planting to the final delivery of goods, Zenith Eclipse Co is committed to driving efficiency and excellence across the global agricultural and energy sectors. Our operations span 40 countries, reflecting a deep dedication to quality at every stage—from production and distribution to international trade and logistics. Exporting goods is a cornerstone of our business, fostering economic growth and strengthening international trade relationships. We focus on optimizing export processes, consistently exceeding global market expectations, and solidifying our reputation as a trusted supplier of premium agricultural commodities.
             </p><br/><br/>
             <div className="key-operations mb-3">
-                <img className="newImage-section -m-2" src="src/assets/icons/2.png" alt=""  style={imageSize} />
+                <img className="newImage-section -m-2" src="./icons/2.png" alt=""  style={imageSize} />
                 <h3>Key Operations</h3>
                 
             </div>
@@ -28,11 +28,11 @@ At the core of Zenith Eclipse Co’s success is our expertise in cultivating, pr
         {/************************** Venturing paragraph **************************************/}
             <div className="Venturing my-grid-container">
                 <div className="my-col-6">
-                    <img className="ventuing-img" src="src/assets/icons/New-Project-1024x800.png" width="90%"  alt=""/>
+                    <img className="ventuing-img" src="./icons/New-Project-1024x800.png" width="90%"  alt=""/>
                 </div>
                 <div className="my-col-6">
                     <div className="key-operations mb-3">
-                        <img className="newImage-section -m-2" src="src/assets/icons/1.png" alt="" style={imageSize}  />
+                        <img className="newImage-section -m-2" src="./icons/1.png" alt="" style={imageSize}  />
                         <h3>Venturing into Petrochemicals</h3>
                     </div>
                     

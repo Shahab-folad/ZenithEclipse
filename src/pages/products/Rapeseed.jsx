@@ -114,7 +114,7 @@ const Rapeseed = () => {
                   </div>
                   {/* ********* */}
                   <div className="product-img item2">
-                    <img src="src/assets/product/rapeseed.webp" alt="" />
+                    <img src="./product/rapeseed.webp" alt="" />
                   </div>
                   {/* ********** */}
                   <div className="product-title item3">

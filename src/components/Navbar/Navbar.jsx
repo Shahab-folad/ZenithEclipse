@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.css';
 import Dropdown from './Dropdown';
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     const [dropProduct, setdropProdcut] = useState("none");
@@ -72,7 +73,11 @@ function Navbar() {
         <header>
           <div className="top-nav">
             <ul className="nav-links">
-              <li><a href="/about">About us</a></li>
+              <li>
+            <Link to="/about">About us</Link>
+                
+                {/* <a href="/about">About us</a> */}
+                </li>
 
               <a href="#" className="search-icon m-1"><img src="search.svg" alt="" /></a>
 
@@ -91,16 +96,18 @@ function Navbar() {
         </header>
         <div className="navbar-container">
           <div className="navbar-logo d-logo">
-            <img src="./src/assets/images/logo.png" alt="zenitheclipse Logo" width="90px" />
+            <img src="./images/logo.png" alt="zenitheclipse Logo" width="90px" />
           </div>
 {/************************************************************************************/}
 {/****************************Desktop List items**************************************/}
           <ul className="navbar-links">
-            <li><a  href="/">Home</a></li>
+          
+            <li><Link to="/">Home</Link></li>
             {/* onMouseOver={()=>{setShow(true)}} */}
-          <li><a  href="/products">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="/ContactUs">Contact Us</a></li>
+          <li><Link to="/products">Products</Link></li>
+            <li><Link to="#">Services</Link></li>
+            
+            <li><Link to="/ContactUs">Contact Us</Link></li>
             <li>
               <a href="#" className="nav-bar-flex">
                 <div className="person-icon">
@@ -117,7 +124,7 @@ function Navbar() {
           <div className="top-nav">
             <div className="navbar-container">
               <div className="navbar-logo">
-                <img src="./src/assets/images/logo.png" alt="zenitheclipse logo" className='mobile-nav-logo' width="54px" />
+                <img src="./images/logo.png" alt="zenitheclipse logo" className='mobile-nav-logo' width="54px" />
               </div>
               <div className="extra-options">
                 <a href="#" className="search-icon"><img src="search.svg" alt="Search" /></a>
@@ -138,17 +145,21 @@ function Navbar() {
             </div>
             <ul className="mobile-menu-links" >
               <li className="nav-item dropdownLi">
-                <a className="nav-link dropdown-toggle" href="#" id="shipping-menu" role="button">Home</a>
+              <Link className="nav-link dropdown-toggle" to="/">Home</Link>
+                {/* <a className="nav-link dropdown-toggle" href="#" id="shipping-menu" role="button">Home</a> */}
                 
               </li>
               <li className="nav-item dropdownLi">
-                <a className="nav-link dropdown-toggle" href="#" id="news-menu" role="button">About Us</a>
+              <Link className="nav-link dropdown-toggle" to="/about">About Us</Link>
+                {/* <a className="nav-link dropdown-toggle" href="#" id="news-menu" role="button">About Us</a> */}
               </li>
    {/******************************* Product *******************************/}
               <li className="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" onClick={productToggle} href="#" id="solutions-menu" role="button">
+              <Link className="nav-link dropdown-toggle" to="/products">Products</Link>
+
+              {/* <a class="nav-link dropdown-toggle" onClick={productToggle} href="#" id="solutions-menu" role="button">
                   Products
-              </a>
+              </a> */}
               <div className="solutionsMenu dropdown-menu" style={{display:dropProduct}} aria-labelledby="solutions-menu">
                   <div className="content">
                       <div className="wrapper">
@@ -174,9 +185,11 @@ function Navbar() {
           </li>
           {/* **************************** Services ******************************* */}
           <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" to="/services">Services</Link>
+{/* 
               <a class="nav-link dropdown-toggle" onClick={servicesToggle} href="#" id="solutions-menu" role="button">
                   Services
-              </a>
+              </a> */}
               <div className="solutionsMenu dropdown-menu" style={{display:dropServices}} aria-labelledby="solutions-menu">
                   <div className="content">
                       <div className="wrapper">
@@ -202,7 +215,9 @@ function Navbar() {
           </li>
           {/* *********************************************************** */}
               <li className="nav-item dropdownLi">
-                <a className="nav-link dropdown-toggle" href="#" id="news-menu" role="button">Contact Us</a>
+          <Link className="nav-link dropdown-toggle" to="/ContactUs">Contact Us</Link>
+                
+                {/* <a className="nav-link dropdown-toggle" href="#" id="news-menu" role="button">Contact Us</a> */}
                 <div className="newsMenu dropdown-menu" aria-labelledby="news-menu">
                   <div className="content">
                     <div className="wrapper">

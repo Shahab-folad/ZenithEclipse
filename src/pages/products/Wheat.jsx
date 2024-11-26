@@ -112,7 +112,7 @@ const Wheat = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/images/wheats.png" alt="" />
+                <img src="./images/wheats.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

@@ -209,7 +209,7 @@ As global leaders in oat production, Zenith Eclipse Co offers unmatched expertis
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/oats.webp" alt="" />
+                <img src="./product/oats.webp" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

@@ -2,8 +2,8 @@ import dedication from '../assets/images/Dedication-to-Excellence.png'
 import harvest from '../assets/images/Harvest-Season-.png'
 import sustainableFarming from '../assets/images/Sustainable-Farming.png'
 
-import wheat from '../assets/images/wheat.png'
-import demo from '../assets/images/demo.mp4'
+// import wheat from '../assets/images/wheat.png'
+// import demo from '../assets/images/demo.mp4'
 
 import React from "react"
 
@@ -73,14 +73,14 @@ const DescriptionV2 = () =>{
 {/***********************************************Left**************************************************/}
             <div className="con-l">
             <div className="mt-24 pl-24 description-img-con">
-                    <img src={wheat} alt="wheat" />
+                    <img src='/images/wheat.png' alt="wheat" />
                 </div>
-                <div className="rounded-lg pl-16 relative z-0 -top-16 -left-5">
+                {/* <div className="rounded-lg pl-16 relative z-0 -top-16 -left-5">
                    <video className='rounded-lg vdr' preload="metadata" autoPlay muted loop playsInline>
-                            <source src="src/assets/videos/agri.mp4" type="video/mp4" />
+                            <source src="./videos/agri.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                </div>
+                </div> */}
             </div>
 
         </div>

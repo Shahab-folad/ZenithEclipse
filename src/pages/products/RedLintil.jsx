@@ -112,7 +112,7 @@ const RedLintil = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/red-lentils.webp" alt="" />
+                <img src="./product/red-lentils.webp" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

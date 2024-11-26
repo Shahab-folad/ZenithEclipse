@@ -16,28 +16,28 @@ const Products = () =>{
         <CardProduct
          title="Wheat"
           detail="Premium  Wheat Supplier High-Quality Wheat for Pasta and Bread Production"
-          img="src/assets/images/wheats.png"
+          img="./images/wheats.png"
           location="/wheat"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Barley"
         detail="Discover Premium Barley Products | Your Trusted Global Barley Supplier "
-        img="src/assets/product/barley.png"
+        img="./product/barley.png"
         location="/barley"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Oats"
         detail={<span>Top Supplier of Premium Oats <br /> Leading Global Producer </span> }
-        img="src/assets/product/oats.webp"
+        img="./product/oats.webp"
         location="/oats"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Millet"
         detail={<span>Premier Supplier of High-Quality Red and Yellow Millet</span> }
-        img="src/assets/product/millet.webp"
+        img="./product/millet.webp"
         location="/millet"
         />
         </div>
@@ -58,28 +58,28 @@ const Products = () =>{
         <CardProduct
          title="Green lentils"
           detail="Premier Supplier of High-Quality Green Lentils"
-          img="src/assets/product/green-lentils.webp"
+          img="./product/green-lentils.webp"
           location="/wheat"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Red lentils"
         detail="Top Quality Red Lentils Supplier | Premium Lentils for Global Markets"
-        img="src/assets/product/red-lentils.webp"
+        img="./product/red-lentils.webp"
         location="/barley"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Chickpea"
         detail={<span>Top Quality Chickpea Supplier | Exporter of High-Grade Chickpeas</span> }
-        img="src/assets/product/checkpeas.png"
+        img="./product/checkpeas.png"
         location="/oats"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Yellow Peas"
         detail={<span>Finest Yellow Peas Supplier – Whole and Split</span> }
-        img="src/assets/product/yellowpeas.webp"
+        img="./product/yellowpeas.webp"
         location="/millet"
         />
         </div>
@@ -100,28 +100,28 @@ const Products = () =>{
         <CardProduct
          title="Flaxseeds"
           detail="Trusted Non-GMO Flaxseed Supplier – High-Quality and Sustainable Seeds"
-          img="src/assets/product/flaxseeds.webp"
+          img="./product/flaxseeds.webp"
           location="/flaxseeds"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Rapeseeds"
         detail="Premium Rapeseeds Supplier – Pure & Non-GMO"
-        img="src/assets/product/rapeseed.webp"
+        img="./product/rapeseed.webp"
         location="/rapeseeds"
         />
         </div><div className='m-4'>
         <CardProduct
         title="sunflower Seeds"
         detail={<span>Premium Sunflower Seeds – Versatility and Excellence in Every Seed</span> }
-        img="src/assets/product/Sunflower.png"
+        img="./product/Sunflower.png"
         location="/sunflowerseed"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Coriander Seeds"
         detail={<span>Premium Coriander Seeds Supplier – Aromatic Excellence</span> }
-        img="src/assets/product/coriander Seed.png"
+        img="./product/coriander Seed.png"
         location="/corianderseed"
         />
         </div>
@@ -142,28 +142,28 @@ const Products = () =>{
         <CardProduct
          title="Sunflower Meal"
           detail="Sunflower Meal for Animal Feed. Premium Sunflower Meal"
-          img="src/assets/product/sunflower-meal.jpg"
+          img="./product/sunflower-meal.jpg"
           location="/sunflower-meal"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Flaxseed Meal"
         detail="Flaxseed Meal – Non-GMO Flaxseed Meal Supplier"
-        img="src/assets/product/Flaxseed.png"
+        img="./product/Flaxseed.png"
         location="/flaxseed-meal"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Rapeseed Meal"
         detail={<span>Rapeseed Meal Supplier & Bulk Rapeseed Meal for Animal Feed</span> }
-        img="src/assets/product/Rapseeds Meal.png"
+        img="./product/Rapseeds Meal.png"
         location="/rapeseed-meal"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Soybean Meal"
         detail={<span>Trusted Soybean Meal Supplier & Premium High-Protein Soya Meal...</span> }
-        img="src/assets/product/Soya Meal.png"
+        img="./product/Soya Meal.png"
         location="/soya-meal-supplier"
         />
         </div>
@@ -185,28 +185,28 @@ const Products = () =>{
         <CardProduct
          title="Flour"
           detail="Trusted wheat Flour Supplier & Leading Wholesale Flour Distributor"
-          img="src/assets/product/Flour.png"
+          img="./product/Flour.png"
           location="/flour"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Sunflower Oil"
         detail="Top-Quality Sunflower Products – Refined and Unrefined Sunflower Oil"
-        img="src/assets/product/sunflower-oil.png"
+        img="./product/sunflower-oil.png"
         location="/sunflower-oil"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Flaxseed Oil"
         detail={<span>Pure and Nutritious Flaxseed Oil – Ethically Sourced for Health </span> }
-        img="src/assets/product/Flaxseed Oil.png"
+        img="./product/Flaxseed Oil.png"
         location="/flaxseed-oil"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Rapeseed Oil"
         detail={<span>Premium Rapeseed Oil – Sustainably Sourced and Rich in Health Benefits</span> }
-        img="src/assets/product/Rapeseed Meal.png"
+        img="./product/Rapeseed Meal.png"
         location="/rapeseeds-oil"
         />
         </div>
@@ -227,21 +227,21 @@ const Products = () =>{
         <CardProduct
          title="Ethylene"
           detail="Premier Ethylene Solutions – Advancing Industrial Excellence"
-          img="src/assets/product/Ethylene.png"
+          img="./product/Ethylene.png"
           location="/ethylene-solution"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Propylene"
         detail="Premier Propylene Solutions – Leading the Way in Industrial Innovation"
-        img="src/assets/product/Propylene.png"
+        img="./product/Propylene.png"
         location="/propylene-supplier"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Polyethylene"
         detail={<span>Premier Polyethylene Solutions – Pioneering Excellence... </span> }
-        img="src/assets/product/Polyethylene.png"
+        img="./product/Polyethylene.png"
         location="/polyethylene"
         />
         </div>

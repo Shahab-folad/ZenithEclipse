@@ -142,7 +142,7 @@ const SoyaMealSupplier = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/Soya Meal.png" alt="" />
+                <img src="./product/Soya Meal.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

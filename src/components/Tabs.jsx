@@ -17,22 +17,22 @@ const Tabs =() => {
 {/******************************************* row one *************************/}
                                 
                                     <div className="Vehical vehical-col">
-                                    <img src="src/assets/images/air-freight.png" className='mx-auto'  alt="some" width="50px"/>
+                                    <img src="./images/air-freight.png" className='mx-auto'  alt="some" width="50px"/>
                                     <h4 className="v-text">Air Freight</h4>
                                     </div>
                                     <div className="Vehical">
-                                    <img src="src/assets/images/ocean-freight.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/ocean-freight.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Ocean Freight</h4>
                                     </div>
                                 
 {/************************************ row tow *********************************/}  
 
                                     <div className="Vehical vehical-col">
-                                    <img src="src/assets/images/rail.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/rail.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Rail Rate</h4>
                                     </div>
                                     <div className="Vehical">
-                                    <img src="src/assets/images/truck.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/truck.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Truck Rate</h4>
                                     </div>
 
@@ -85,22 +85,22 @@ const Tabs =() => {
 {/******************************************* row one *************************/}
                                 
                                     <div className="Vehical vehical-col">
-                                    <img src="src/assets/images/air-freight.png" className='mx-auto'  alt="some" width="50px"/>
+                                    <img src="./images/air-freight.png" className='mx-auto'  alt="some" width="50px"/>
                                     <h4 className="v-text">Air Freight</h4>
                                     </div>
                                     <div className="Vehical">
-                                    <img src="src/assets/images/ocean-freight.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/ocean-freight.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Ocean Freight</h4>
                                     </div>
                                 
 {/************************************ row tow *********************************/}  
 
                                     <div className="Vehical vehical-col">
-                                    <img src="src/assets/images/rail.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/rail.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Rail Rate</h4>
                                     </div>
                                     <div className="Vehical">
-                                    <img src="src/assets/images/truck.png" className='mx-auto' alt="some" width="50px"/>
+                                    <img src="./images/truck.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Truck Rate</h4>
                                     </div>
 

@@ -8,7 +8,7 @@ const Header = () => {
         {/* Video container */}
         <div className="video-container">
                         <video preload="metadata" autoPlay muted loop playsInline>
-                            <source src="src/assets/videos/hero.mp4" type="video/mp4" />
+                            <source src="./videos/hero.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         {/* Overlay content on top of the video */}

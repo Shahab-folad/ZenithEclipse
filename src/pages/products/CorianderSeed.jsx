@@ -164,7 +164,7 @@ const CorianderSeed = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/coriander Seed.png" alt="" />
+                <img src="./product/coriander Seed.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

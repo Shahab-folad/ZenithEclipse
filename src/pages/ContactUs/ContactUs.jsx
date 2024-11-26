@@ -46,22 +46,22 @@ const ContactUs = () => {
             <div className="contact-images">
         {/**********************************************/}
                 <div className="contact-img">
-                    <img src="src/assets/contactImages/3-1.png" alt="" />
+                    <img src="./contactImages/3-1.png" alt="" />
                     <h3>General</h3>
                 </div>
         {/**********************************************/}
                  <div className="contact-img">
-                    <img src="src/assets/contactImages/4-1.png" alt="" />
+                    <img src="./contactImages/4-1.png" alt="" />
                     <h3>Sales Team</h3>
                 </div>
         {/**********************************************/}
                  <div className="contact-img">
-                    <img src="src/assets/contactImages/5.png" alt="" />
+                    <img src="./contactImages/5.png" alt="" />
                     <h3>Logistics Team</h3>
                  </div>
         {/**********************************************/}
                 <div className="contact-img">
-                    <img src="src/assets/contactImages/6.png" alt="" />
+                    <img src="./contactImages/6.png" alt="" />
                     <h3>ecustomer support</h3>
                 </div>
 

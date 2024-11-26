@@ -242,7 +242,7 @@ const FlaxseedOil = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/Flaxseed Oil.png" alt="" />
+                <img src="./product/Flaxseed Oil.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

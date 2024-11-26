@@ -43,11 +43,11 @@ const About = () => {
 
         </div>
       <div className="about-right-content">
-        <img src="src/assets/AboutImage/2.png" alt="" />
+        <img src="./AboutImage/2.png" alt="" />
         {/****************** About Video ******************/}
         <div className="about-video">
         <video preload="metadata" autoPlay muted loop playsInline >
-        <source src="src/assets/AboutImage/about us.mp4" type="video/mp4" />
+        <source src="./AboutImage/about us.mp4" type="video/mp4" />
          Your browser does not support the video tag.
         </video>
         </div>
@@ -63,7 +63,7 @@ const About = () => {
       At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
       </p> */}
 
-      <img className='global-img' src="src/assets/AboutImage/3.png" alt="" />
+      <img className='global-img' src="./AboutImage/3.png" alt="" />
       <p className="global-p2 standard-p">
       Our mission is the responsibily source and supply essential commodities,  fostering sustainable growth and delivering value to customers, shareholders, employees, and comunities. Safety, environmental stewardship, and community well-being are central to our activities as we work to unify agriculture, logistics, and petrochemicals. We are committed to buillding connections that drive progress and sustainablility new standards of excellence in  our field.
       </p>
@@ -73,7 +73,7 @@ const About = () => {
     <div className="team-container ">
 
       <div className="team-img">
-        <img src="src/assets/AboutImage/4.png" alt="" />
+        <img src="./AboutImage/4.png" alt="" />
       </div>
       <div className='team-content'>
         <p className="team-p1 standard-p">

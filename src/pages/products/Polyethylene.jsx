@@ -260,7 +260,7 @@ const Polyethylene = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/Polyethylene.png" alt="" />
+                <img src="./product/Polyethylene.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

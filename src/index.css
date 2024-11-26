@@ -1248,7 +1248,7 @@ body{
       }
       /***************************************************************************************/
       .background-forty-container {
-        background-image: url('src/assets/icons/40new.png');
+        background-image: url('./icons/40new.png');
         background-color: #f5f7f9;
         background-repeat: no-repeat;
         background-size: contain;

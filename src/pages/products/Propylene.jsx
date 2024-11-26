@@ -158,7 +158,7 @@ const Propylene = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/product/Propylene.png" alt="" />
+                <img src="./product/Propylene.png" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
