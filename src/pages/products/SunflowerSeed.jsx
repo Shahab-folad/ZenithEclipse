@@ -123,7 +123,7 @@ const SunflowerSeed = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/Sunflower.png" alt="" />
+                <img src="./product/Sunflower.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

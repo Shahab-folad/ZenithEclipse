@@ -148,7 +148,7 @@ const Flaxseeds = () => {
                   </div>
                   {/* ********* */}
                   <div className="product-img item2">
-                    <img src="./product/flaxseeds.webp" alt="" />
+                    <img src="./product/Flaxseed.jpg" alt="" />
                   </div>
                   {/* ********** */}
                   <div className="product-title item3">

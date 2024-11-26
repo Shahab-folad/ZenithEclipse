@@ -140,7 +140,7 @@ const SunflowerMeal = () => {
                   </div>
                   {/* ********* */}
                   <div className="product-img item2">
-                    <img src="./product/sunflower-meal.jpg" alt="" />
+                    <img src="./product/Sunflower Meal.jpg" alt="" />
                   </div>
                   {/* ********** */}
                   <div className="product-title item3">

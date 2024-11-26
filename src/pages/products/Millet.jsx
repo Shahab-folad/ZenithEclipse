@@ -168,7 +168,7 @@ const Millet = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/millet.webp" alt="" />
+                <img src="./product/Millet.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

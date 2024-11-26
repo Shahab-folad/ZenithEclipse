@@ -169,7 +169,7 @@ const SunflowerOil = () => {
                   </div>
                   {/* ********* */}
                   <div className="product-img item2">
-                    <img src="./product/sunflower-oil.png" alt="" />
+                    <img src="./product/Sunflower Oil.jpg" alt="" />
                   </div>
                   {/* ********** */}
                   <div className="product-title item3">

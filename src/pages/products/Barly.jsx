@@ -150,7 +150,7 @@ const Barly = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/barley.png" alt="" />
+                <img src="./product/Barley.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

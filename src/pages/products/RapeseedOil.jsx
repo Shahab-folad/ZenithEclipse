@@ -170,7 +170,7 @@ const RapeseedOil = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/Rapeseed Meal.png" alt="" />
+                <img src="./product/Rapeseed Meal.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

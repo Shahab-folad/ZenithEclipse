@@ -128,7 +128,7 @@ const FlaxseedMeal = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/Flaxseed.png" alt="" />
+                <img src="./product/Flaxseed Meal.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

@@ -169,7 +169,7 @@ const YellowPeas = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/yellowpeas.webp" alt="" />
+                <img src="./product/Yellow Peas.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
