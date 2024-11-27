@@ -96,7 +96,7 @@ function Navbar() {
         </header>
         <div className="navbar-container">
           <div className="navbar-logo d-logo">
-            <img src="./images/logo.png" alt="zenitheclipse Logo" width="90px" />
+            <img src="./images/logo.png" alt="zenitheclipse Logo" width="80px" />
           </div>
 {/************************************************************************************/}
 {/****************************Desktop List items**************************************/}
@@ -124,10 +124,10 @@ function Navbar() {
           <div className="top-nav">
             <div className="navbar-container">
               <div className="navbar-logo">
-                <img src="./images/logo.png" alt="zenitheclipse logo" className='mobile-nav-logo' width="54px" />
+                <img src="./images/logo.png" alt="zenitheclipse logo" className='mobile-nav-logo' width="35px" />
               </div>
               <div className="extra-options">
-                <a href="#" className="search-icon"><img src="search.svg" alt="Search" /></a>
+                <a href="#" className="search-icon m-search"><img src="search.svg" alt="Search" /></a>
                 <div className="menu-icon" onClick={toggleMenuActive}>
                   <img src="tab.PNG" alt="Menu" />
                 </div>

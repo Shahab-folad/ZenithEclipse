@@ -18,7 +18,8 @@ margin-top: 2rem;
     grid-column: 1 / 2; /* Occupies column 1 */
     grid-row: 1 / 2;    /* Occupies row 1 */
     background-color: white !important;
-    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);  */
+    /* height: fit-content; */
     padding: 16px;
   }
   
@@ -64,10 +65,17 @@ margin-top: 2rem;
     font-family: 'Cinzel', sans-serif;
     margin-top: 4rem;
 }
+@media (max-width: 769px) {
+    .h1-design{
+        margin-top: 0rem;
+    }
+}
 .h1-sub-design{
     font-size: clamp(1rem, 5vw, 1.8rem);
     font-family: 'Cinzel', sans-serif;
     padding-top: 2rem;
+    color: #003366;
+
 }
 .p-line{
     color: red;
@@ -79,7 +87,8 @@ margin-top: 2rem;
     padding: 1rem;
     margin: 1rem 0 1rem 0;
     background-color: white !important;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    /* background-color: white !important;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
 
 }
 /* .product-description{
@@ -90,16 +99,22 @@ margin-top: 2rem;
     font-family: 'Cinzel', sans-serif;
     font-size: 24px !important;
     margin: 1rem 0 1rem 0;
+    color: #003366;
+
 }
 .ph1{
     font-family: 'Cinzel', sans-serif;
     font-size: 21px !important;
     margin: 1rem 0 1rem 0;
+    color: #003366;
+
 }
 .ph2{
     font-family: 'Cinzel', sans-serif;
     font-size: 18px !important;
     margin: 1rem 0 1rem 0;
+    color: #003366;
+
 }
 
 /**********************************  **********************************/

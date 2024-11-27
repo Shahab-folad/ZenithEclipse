@@ -35,15 +35,36 @@ const About = () => {
         Our approuch extends beyond crop production to support livestock health, an essential component of a sustainable agricultural ecosystem. Through advanced health monitoring and tailored mutritional stratagies, we work to enhance animal well-being and quality of livestock-based products reinforcing ethical farming practices that esssential part of our operation is the extraction of high-quality oils and nutrient-rich seed meals.
         Our advanced technology ensures the purity of oils derived from sunflower, rapeseed, and flaxeed while promoting sustainable practices throughout the production process. We Are also equiped with state-of-th-art facilities for producing premium wheat and flour, meeting the growing demands of the market with effeciency and precision.
         </p>
-        <br />
-        <p className='about-left-content-p1 standard-p'>
+        {/* <p className='about-left-content-p1 standard-p'>
         Our global logistics network allows us to deliver products relibility to markets world wiide, utillizing a seamless blend of transport options, including trains, vessels, and trucks. This integrated approach ensures that our supply chain meets global standards while maintaining products freshness and quality.
         At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
-        </p>
+        </p> */}
 
         </div>
       <div className="about-right-content">
         <img src="./AboutImage/2.png" alt="" />
+        {/****************** About Video ******************/}
+        {/* <div className="about-video">
+        <video preload="metadata" autoPlay muted loop playsInline >
+        <source src="./AboutImage/about us.mp4" type="video/mp4" />
+         Your browser does not support the video tag.
+        </video>
+        </div> */}
+        
+      </div>
+      
+    </div>
+    {/****************************** Content part 2-1 ******************************/}
+      <div className="about-content -mb-16">
+      <div className="about-left-content">
+        <br />
+      <p className='about-left-content-p1 standard-p'>
+        Our global logistics network allows us to deliver products relibility to markets world wiide, utillizing a seamless blend of transport options, including trains, vessels, and trucks. This integrated approach ensures that our supply chain meets global standards while maintaining products freshness and quality.
+        At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
+        </p>
+        </div>
+  {/**********************************  **********************************/}
+  <div className="about-right-content ">
         {/****************** About Video ******************/}
         <div className="about-video">
         <video preload="metadata" autoPlay muted loop playsInline >
@@ -53,10 +74,11 @@ const About = () => {
         </div>
         
       </div>
-    </div>
+      </div>
 
 
-    {/****************************** Content part 2 ******************************/}
+
+    {/****************************** Content part 2-2 ******************************/}
     <div className="about-global-content">
       {/* <p className='standard-p global-p'>
       Our global logistics network allows us to deliver products relibility to markets world wiide, utillizing a seamless blend of transport options, including trains, vessels, and trucks. This integrated approach ensures that our supply chain meets global standards while maintaining products freshness and quality.
@@ -72,9 +94,7 @@ const About = () => {
     {/************************************ Team content ************************************/}
     <div className="team-container ">
 
-      <div className="team-img">
-        <img src="./AboutImage/4.png" alt="" />
-      </div>
+      
       <div className='team-content'>
         <p className="team-p1 standard-p">
         Our team is dedicated to build lasting relationships with clients by offering tailored solutions that meet the unique demands of global supply chains. With expertise in freight forwarding, contract logistics, and specialized transport, we deliver comprehensive logistics solutions that ensure timely, safe, and efficient movement of goods across borders.
@@ -83,6 +103,9 @@ const About = () => {
         <p className='team-p2 standard-p'>
         in key agricultural regions, we provide customized logistics solutions to address the spencific needs of perhsable and high-quality products. Our expertise in animal feed logistics also ensures that various types of feed are delivered safely and on sechedule to support livestock health and productivity.
         </p>
+      </div>
+      <div className="team-img">
+        <img src="./AboutImage/4.png" alt="" />
       </div>
     </div>
     {/********************************** end content **********************************/}

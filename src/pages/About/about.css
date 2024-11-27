@@ -5,7 +5,6 @@ body{
     margin: 0px;
     padding: 6rem ; 
     width: 100%;
-
 }
 @media(max-width: 768px){
     .about{
@@ -16,9 +15,14 @@ body{
     max-width: 600px;
     align-self: center;
     margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
+}
+@media (min-width: 780px){
+    .about-header{
+        margin-top: -2rem;
+    }
 }
 .about-header-h1{
     display: block;
@@ -40,7 +44,8 @@ body{
     content: "";
     flex-grow: 1; /* Makes the line flexible in width */
     height: 2px; /* Thickness of the line */
-    margin-right: 8px; /* Space between the line and text */
+    margin-right: 10px; /* Space between the line and text */
+    
   }
 /* .about-line{
     border-bottom: 2px solid #003366;
@@ -76,7 +81,7 @@ body{
     width: 70%;
     margin-left: 20%;
 }
-@media(max-width: 425px){
+@media(max-width: 768px){
     .about-left-content-p1{
         width: 99%;
     }
@@ -97,8 +102,8 @@ body{
 }
 
 .about-video video{
-    margin-top: -1rem;
-    width: 35%;
+    margin-top: -6rem;
+    width: 25%;
 }
 @media(max-width: 768px){
     .about-video video{
@@ -133,8 +138,12 @@ body{
 }
 @media (max-width: 768px){
     .global-p2{
-        width: 80%;
+        width: 97%;
         margin: 4rem auto 0 auto;
+    }
+    .global-img{
+        width: 98%;
+        margin: 2rem auto 0 auto;
     }
 }
 @media (max-width: 425px){
@@ -158,13 +167,15 @@ body{
     } 
 }
 .team-content{
-    width: 50%
+    width: 50%;
+    order: 2;
 }
 .team-p1{
     /* background-color: aqua; */
 }
 .team-img{
     width: 50%;
+    order: 1;
 }
 @media(max-width: 768px){
     .team-img{

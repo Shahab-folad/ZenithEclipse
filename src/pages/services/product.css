@@ -58,7 +58,7 @@ margin-top: 2rem;
     color: #003366;
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: 'Cinzel', sans-serif;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 .h1-sub-design{
     font-size: clamp(1rem, 5vw, 1.8rem);

@@ -9,16 +9,7 @@ const Footer = () => {
                     <img src="./images/logo.png" alt="logo" className='m-auto' />
                 </div>
                 <p className="footer__description font-Resolve">
-                    Zenith Eclipse Co is a leading international freight forwarding company,
-                    providing seamless global logistics solutions through an advanced
-                    digital platform. We partner with licensed, fully compliant third-party
-                    carriers for vessel and air cargo services, ensuring adherence to the
-                    highest industry standards, including those set by the International
-                    Maritime Organization and the European Union Aviation Safety Agency.
-                    While Zenith Eclipse Co does not provide additional liability insurance,
-                    all cargo are fully covered under the carriers insurance policies. We
-                    are committed to delivering reliable, safe, and efficient transport
-                    solutions across international borders.
+                Zenith Eclipse is a leading international trading and logistics company, offering comprehensive solutions for global markets. Our expertise extends to air charter services and ocean transport, ensuring safe, efficient, and reliable delivery of goods worldwide. We collaborate with fully licensed and certified air carriers and shipping operators, adhering to international aviation and maritime regulations. Zenith Eclipse does not operate aircraft or vessels directly; all services are provided through trusted third-party carriers, fully insured for cargo  safety. Our operations strictly comply with European Union, U.S., and international laws to maintain the highest standards of safety and reliability.
                 </p>
                 <section className="footer__links font">
                     <h2 className="footer__links-title">

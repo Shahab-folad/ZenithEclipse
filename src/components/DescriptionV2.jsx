@@ -9,8 +9,7 @@ import React from "react"
 
 const DescriptionV2 = () =>{
     const imageSize = {
-        width: '45px',
-        height: '47.5px !important',
+        height: '35px'
       };
     return(
         <>
@@ -20,7 +19,7 @@ const DescriptionV2 = () =>{
             <div className='con-r'>
                 <div className='des'>
                 <div className="key-operations mb-3">
-                <img className="newImage-section -m-2" src={dedication} alt="dedication"  style={imageSize} />
+                <img className="newImage-section -m-2" src="./icons/DoubleComa.png" alt="dedication"  style={imageSize} />
                 <h3>Dedication & Responsibility</h3>
                 
                 </div>
@@ -35,7 +34,7 @@ const DescriptionV2 = () =>{
             <br /><br />
 {/***********************************************************************************************/}
                 <div className="key-operations mb-3">
-                <img className="newImage-section -m-2" src={sustainableFarming} alt="sustainable "  style={imageSize} />
+                <img className="newImage-section -m-2" src="./icons/DoubleComa.png" alt="sustainable "  style={imageSize} />
                 <h3>Sustainable Farming</h3>
                 
                 </div>
@@ -53,7 +52,7 @@ const DescriptionV2 = () =>{
 <br /><br />
 {/***********************************************************************************************/}
                 <div className="key-operations mb-3">
-                <img className="newImage-section -m-2" src={harvest} alt="harvesting"  style={imageSize} />
+                <img className="newImage-section -m-2" src="./icons/DoubleComa.png" alt="harvesting"  style={imageSize} />
                 <h3>Harvest Season</h3>
                 
                 </div>
@@ -72,7 +71,7 @@ const DescriptionV2 = () =>{
 {/*************************************************************************************************/}
 {/***********************************************Left**************************************************/}
             <div className="con-l">
-            <div className="mt-24 pl-24 description-img-con">
+            <div className="mt-8 lg:mt-24 xl:mt-24 pl-10 lg:pl-24 xl:pl-24 description-img-con">
                     <img src='/images/wheat.png' alt="wheat" />
                 </div>
                 {/* <div className="rounded-lg pl-16 relative z-0 -top-16 -left-5">

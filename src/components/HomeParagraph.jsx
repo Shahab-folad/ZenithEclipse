@@ -1,11 +1,12 @@
 
 import React from "react";
 import Elementor from './Elementor';
+import ElementorV2 from "./ElementorV2";
 
 function HomeParagraph(){
     const imageSize = {
         width: '45px',
-        height: '47.5px !important',
+        height: '45px !important',
       };
     return(
         <div className="content-paragraph">
@@ -32,7 +33,7 @@ At the core of Zenith Eclipse Co’s success is our expertise in cultivating, pr
                 </div>
                 <div className="my-col-6">
                     <div className="key-operations mb-3">
-                        <img className="newImage-section -m-2" src="./icons/1.png" alt="" style={imageSize}  />
+                        <img className="newImage-section forceImg -m-2" src="./icons/1.png" alt=""  />
                         <h3>Venturing into Petrochemicals</h3>
                     </div>
                     
@@ -51,6 +52,7 @@ Driven by innovation, Zenith Eclipse Co has expanded its portfolio to include pe
                 </div>
         {/************************** elementor **************************************/}
                 <div className="elementor-container">
+                    <div className="desktop-elementor">
                     <Elementor title="Core Objective"
                     text="Our primary goal is to enhance lives by sourcing and delivering essential goods. We are dedicated to fostering development and generating value for clients, investors, employees, and the communities where we operate. Safety, environmental sustainability, and community well-being are at the heart of every initiative we undertake."
                     />
@@ -60,7 +62,12 @@ Driven by innovation, Zenith Eclipse Co has expanded its portfolio to include pe
                     <Elementor title="Commitment" 
                     text="At Zenith Eclipse Co, we are more than a conglomerate—we are a collective of innovators and visionaries working together to create meaningful global impact. Our mission is not just to meet demands but to shape a sustainable and prosperous future. Operating in 40+ nations, we play a pivotal role in connecting high-quality products with the markets that need them most."
                     />
+                    </div>
+                    <div className="mobile-elementor">
+                         <ElementorV2 />
+                    </div>
                 </div>
+        {/************************** elementor **************************************/}
             
         </div>
         

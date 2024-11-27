@@ -10,7 +10,8 @@ import { useEffect, useState } from 'react'
 const Description = () => {
 
     const imgHeight ={
-        height: '1000px',
+        height: '45px',
+        width: '45px'
     };
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
