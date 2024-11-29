@@ -4,6 +4,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useState, useEffect } from "react";
 
+import { motion } from 'framer-motion';
+
+
 import "./product.css";
 import { p } from "framer-motion/client";
 
@@ -164,21 +167,24 @@ Navigating the complexities of ocean shipping requires adherence to regulations 
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/servicesImage/WhatsApp Image 2024-11-22 at 8.48.22 PM.jpeg" alt="" />
+                <img src="./servicesImage/WhatsApp Image 2024-11-22 at 8.48.22 PM.jpeg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
                 <h1 className="h1-sub-design">Ocean Freight Forwarding Sea Transport</h1>
+                {/*****************  *****************/}
+              <div className="pp-part1">
+              <p >
+              We offer top-tier ocean freight services designed to elevate your supply chain efficiency. By leveraging our vast network and strong partnerships with leading carriers and container ships, we provide reliable and cost-effective logistics solutions that prioritize operational excellence and meet the demands of modern businesses.
+              </p>
+            </div>
               </div>
+              
             </div>
       </div>
 {/*****************************************************************************************/}
       <div className="product-description">
-        <div className="pp-part1">
-          <p>
-          We offer top-tier ocean freight services designed to elevate your supply chain efficiency. By leveraging our vast network and strong partnerships with leading carriers and container ships, we provide reliable and cost-effective logistics solutions that prioritize operational excellence and meet the demands of modern businesses.
-          </p>
-        </div>
+       
         <div className="pp-part1">
           <h1 className="ph1">
           Efficient Shipping Routes
@@ -204,7 +210,7 @@ Navigating the complexities of ocean shipping requires adherence to regulations 
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -217,6 +223,20 @@ Navigating the complexities of ocean shipping requires adherence to regulations 
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

@@ -119,3 +119,11 @@ margin-top: 2rem;
     list-style-type: disc;
     margin-left: 1rem;
 }
+/*************************** Railway form ***************************/
+.railway-form-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.railway-form{
+    max-width: 800px;
+}

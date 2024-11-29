@@ -2,6 +2,9 @@ import Navbar from "../../components/Navbar/Navbar"
 
 import { IoIosArrowDown } from "react-icons/io";
 
+import { motion } from 'framer-motion';
+
+
 import { useState, useEffect } from "react";
 
 import "./product.css";
@@ -191,7 +194,7 @@ const GreenLintil = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -204,6 +207,20 @@ const GreenLintil = () => {
                     {feature.content}
                   </div>
                 </div>}
+                 {/********************** border Animation **********************/}
+                 <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

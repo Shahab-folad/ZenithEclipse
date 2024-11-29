@@ -4,6 +4,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useState, useEffect } from "react";
 
+import { motion } from 'framer-motion';
+
+
 import "./product.css";
 import { p } from "framer-motion/client";
 
@@ -220,25 +223,206 @@ const RailTransport = () => {
             <div className="product-header ">
               {/* ****** */}
               <div className="product-title item1">
-                <h1 className="h1-design ">Rail Transport<span className="p-line">____</span></h1>
+                <h1 className="h1-design ">Railway Transport<span className="p-line">____</span></h1>
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/servicesImage/WhatsApp Image 2024-11-22 at 10.01.26 PM.jpeg" alt="" />
+                <img src="./servicesImage/WhatsApp Image 2024-11-22 at 10.01.26 PM.jpeg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
-                <h1 className="h1-sub-design">Rail Transport Solutions for Global Logistics Efficiency</h1>
+                <h1 className="h1-sub-design">Competitive Rates for Reliable Logistics</h1>
+                <div className="pp-part1">
+                <p className="-ml-4">
+                Welcome to the Rail Rates page for Zenith Railway Transport, where we provide comprehensive, cost-effective solutions for shipping goods across regions. Our rail services are designed to deliver efficiency, reliability, and sustainability at highly competitive rates. Whether you are transporting bulk goods or containerized cargo, Zenith Eclipse Co ensures seamless transit with customized pricing to meet your business needs.
+                </p>
+              </div>
               </div>
             </div>
       </div>
-{/*****************************************************************************************/}
-      <div className="product-description">
-        <div className="pp-part1">
-          <p>
-          Zenith Eclipse leads the way in maximizing the efficiency, cost-effectiveness, and sustainability of rail transport to strengthen your supply chain capabilities. With vast experience and strategic partnerships with rail operators, we offer tailored rail-based transportation solutions that ensure the reliable movement of your goods across extensive networks. Our services cover all CIS countries and the critical China railway routes, positioning us as a frontrunner in Eurasian logistics.
-          </p>
+{/*********************************************************************************************/}
+{/******************************************Form***********************************************/}
+<div className="railway-form-container ">
+ 
+{/****************************************************************************************/}
+<div class="railway-form mx-auto fontResolve shadow-lg p-4">
+   {/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> paragraph <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/}
+   <div className="pp-part1 ">
+       <p className="text-center">          
+       Fill out the required information in the form, and our team will get back to you within one hour.
+     </p>
+  </div>
+  <form class="w-full ">
+    {/********************************* part company *********************************/}
+  <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="companyName">
+      Company Name
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="companyName" type="text" placeholder="Company Name" />
+      <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+    </div>
+    {/* ***************************************************************************** */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="yourName"> 
+       Your Name
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="yourName" type="text" placeholder="Full Name" />
+    </div>
+  </div>
+    {/********************************* part contact *********************************/}
+    <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email">
+      Email
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="email" type="email" placeholder="example@email.com" />
+    </div>
+    {/* ********************************************************************************** */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="phone">
+        Phone
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="phone" type="phone" placeholder="Phone" />
+    </div>
+  </div>
+  
+    {/********************************* part address *********************************/}
+    <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="address">
+      Address
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="address" type="text" placeholder="Address" />
+    </div>
+    {/* ****************************************************************************** */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="city">
+        City
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="city" type="text" placeholder="City" />
+    </div>
+  </div>
+
+    {/********************************* part State *********************************/}
+    <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="state">
+      State
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="state" type="text" placeholder="State" />
+      
+    </div>
+    {/* ********************************************************************* */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="zip">
+        Zip Code
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="zip" type="text" placeholder="Zip" />
+    </div>
+  </div>
+
+    {/********************************* part Loding *********************************/}
+    <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="loadingStation">
+      Loading Station / Station Code : <i className="fas fa-info-circle text-blue-950"></i>
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="loadingStation" type="text" placeholder="" />
+      
+    </div>
+    {/* ************************************************************************* */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="deliveryStation">
+      Delivery Station / Station Code: <i className="fas fa-info-circle text-blue-950"></i>
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="deliveryStation" type="text" placeholder="" />
+    </div>
+  </div>
+
+    {/********************************* part Select *********************************/}
+
+
+  <div class="flex flex-wrap -mx-3 mb-2">
+    
+    <div class="w-full  px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="wagon">
+      Type of Wagon:
+      </label>
+      <div class="relative">
+        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="wagon">
+          <option>-Select-</option>
+          <option>Covered wagon</option>
+          <option>Open Wagon</option>
+          <option>Open Wagon</option>
+          <option>Open Wagon</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
         </div>
+      </div>
+    </div>
+    
+  </div>
+
+   {/********************************* part Loding *********************************/}
+   <div class="flex flex-wrap -mx-3 mb-6">
+    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="loadingStation">
+      HS Code / Commodity:  <i className="fas fa-info-circle text-blue-950"></i>
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="loadingStation" type="text" placeholder="" />
+      
+    </div>
+    {/* ************************************************************************* */}
+    <div class="w-full md:w-1/2 px-3">
+      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="deliveryStation">
+      Packing: <i className="fas fa-info-circle text-blue-950"></i>
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="deliveryStation" type="text" placeholder="" />
+    </div>
+  </div>
+
+    {/********************************* part DAP *********************************/}
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" htmlFor="dap">
+      DAP / CPT: <i className="fas fa-info-circle text-blue-950"></i>
+      </label>
+      <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="dap" type="text" placeholder="" />
+    </div>
+    {/********************************* part BTN *********************************/}
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+      Your Message:
+      </label>
+      <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" type="text" placeholder="" rows={'4'} />
+    </div>
+
+
+
+{/********************************* part BTN *********************************/}
+  <div class="mt-4">
+      <button class="shadow bg-blue-950 hover:bg-blue-900 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Submit Form
+      </button>
+    </div>
+</form>
+</div>
+{/**********************************************************************************/}
+{/**********************************************************************************/}
+<div className="pp-part1">
+                <p >
+                
+                Zenith Eclipse leads the way in maximizing the efficiency, cost-effectiveness, and sustainability of rail transport to strengthen your supply chain capabilities. With vast experience and strategic partnerships with rail operators, we offer tailored rail-based transportation solutions that ensure the reliable movement of your goods across extensive networks. Our services cover all CIS countries and the critical China railway routes, positioning us as a frontrunner in Eurasian logistics.
+                </p>
+              </div>
+
+</div>
+
+      <div className="product-description">
+    
+        
         <div className="pp-part1">
           <h1 className="ph1">
           Extensive Rail Network for Seamless Global Transportation
@@ -263,11 +447,13 @@ const RailTransport = () => {
         </div>
 
       </div>
+{/**********************************************************************************/}
+{/**********************************************************************************/}
 
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -280,6 +466,20 @@ const RailTransport = () => {
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

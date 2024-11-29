@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar"
 
 import { IoIosArrowDown } from "react-icons/io";
+import { motion } from 'framer-motion';
 
 import { useState, useEffect } from "react";
 
@@ -106,18 +107,13 @@ const AirCargo = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/servicesImage/WhatsApp Image 2024-11-22 at 10.01.16 PM.jpeg" alt="" />
+                <img src="./servicesImage/WhatsApp Image 2024-11-22 at 10.01.16 PM.jpeg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
                 <h1 className="h1-sub-design">Air Freight Forwarding</h1>
-              </div>
-            </div>
-      </div>
-{/*****************************************************************************************/}
-      <div className="product-description">
-        <div className="pp-part1">
-          <p>
+                <div className="pp-part1">
+          <p className="-ml-4">
           At Zenith Eclipse, we provide specialized air cargo services designed to support your business on a global scale. Our air cargo solutions cater to various shipment requirements, including time-sensitive deliveries, customized charter services, international flight routes, and specialized animal transportation.
           </p>
         </div>
@@ -129,6 +125,13 @@ const AirCargo = () => {
           Our services span across the globe, ensuring the efficient transport of your goods. With a well-established network of air cargo routes and trustworthy global partnerships, Zenith Eclipse consistently upholds high service quality and operational efficiency, no matter the region.
           </p>
         </div>
+              </div>
+            </div>
+      </div>
+{/*****************************************************************************************/}
+      <div className="product-description">
+        
+       
         <div className="pp-part1">
           <h1 className="ph1">
           Comprehensive Air Cargo Services
@@ -154,7 +157,7 @@ const AirCargo = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -167,6 +170,20 @@ const AirCargo = () => {
                     {feature.content}
                   </div>
                 </div>}
+                 {/********************** border Animation **********************/}
+                 <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

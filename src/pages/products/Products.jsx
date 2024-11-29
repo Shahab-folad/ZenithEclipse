@@ -1,8 +1,13 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { CardProduct } from '../../components/CardProduct';
+import { useState, useEffect } from "react";
+
 
 const Products = () =>{
+    useEffect(() => {
+        document.title = "Products"
+      }, [])
     return(
         <>
     <Navbar />
@@ -80,7 +85,7 @@ const Products = () =>{
         title="Yellow Peas"
         detail={<span>Finest Yellow Peas Supplier – Whole and Split</span> }
         img="./product/Yellow Peas.jpg"
-        location="/yellow-peas"
+        location="/whole-yellow-peas"
         />
         </div>
         

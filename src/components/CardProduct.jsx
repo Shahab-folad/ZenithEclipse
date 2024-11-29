@@ -10,12 +10,12 @@ import {
 
 export function CardProduct(props) {
   return (
-    <Card className="mt-6 w-72 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-lg p-2">
-      <CardHeader color="blue-gray" className="relative h-56 rounded-t-lg">
+    <Card className="mt-6 w-72 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-lg p-2">
+      <CardHeader color="blue-gray" className="relative h-56 content-center  shadow-none">
         <img
           src={props.img}
           alt="card-image"
-          className="h-full w-full object-cover rounded-t-lg"
+          className=" lg:w-full xl:w-full md:w-full w-48 object-cover mx-auto "
         />
       </CardHeader>
       <CardBody className="bg-white mt-4">

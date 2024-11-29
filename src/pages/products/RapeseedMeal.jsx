@@ -4,6 +4,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useState, useEffect } from "react";
 
+import { motion } from 'framer-motion';
+
+
 import "./product.css";
 
 const RapeseedMeal = () => {
@@ -150,6 +153,20 @@ const RapeseedMeal = () => {
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

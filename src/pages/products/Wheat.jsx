@@ -1,4 +1,6 @@
-import Navbar from "../../components/Navbar/Navbar"
+import Navbar from "../../components/Navbar/Navbar";
+
+import { motion } from 'framer-motion';
 
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -57,7 +59,7 @@ const Wheat = () => {
       header: "Logistics and Global Wheat Distribution",
       content:
         <div >
-          <h3 className="font-bold font-Cinzel " >Zenith Eclipse Co has a robust logistics network to ensure timely delivery of our premium wheat products worldwide:</h3>
+          <h3 className="font-bold  " >Zenith Eclipse Co has a robust logistics network to ensure timely delivery of our premium wheat products worldwide:</h3>
           <ul className="list-disc pl-5 space-y-2 p-4 ">
             <li className=""><b>Hopper Wagons:</b>  Perfect for transporting grain across CIS countries.</li>
             <li className="tex"><b>Covered Wagons:</b> Ideal for transporting packaged wheat, protecting it from adverse weather conditions.</li>
@@ -149,7 +151,7 @@ const Wheat = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -162,8 +164,20 @@ const Wheat = () => {
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
 
-
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
               </div>
             ))
           }

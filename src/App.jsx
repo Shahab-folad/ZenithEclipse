@@ -1,6 +1,7 @@
 
 import Footer from "./components/footer/Footer"
 // import Navbar from "./components/Navbar";
+import { motion } from 'framer-motion';
 import Checkpeas from "./pages/products/Checkpeas";
 import Flaxseeds from "./pages/products/Flaxseeds";
 import GreenLintil from "./pages/products/GreenLintil";
@@ -30,7 +31,7 @@ import Polyethylene from "./pages/products/Polyethylene";
 import Propylene from "./pages/products/Propylene";
 import EndToEndTransportation from "./pages/services/EndToEndTransportation";
 // SERVICES PART*************************************
-
+import Services from "./pages/services/Services";
 import AirCargo from "./pages/services/AirCargo";
 import OceanFreight from "./pages/services/OceanFreight";
 import RoadTransport from "./pages/services/RoadTransport";
@@ -84,12 +85,14 @@ const App = () => {
           <Route path="/ethylene-solution" element={<Ethylene />} />
           <Route path="/polyethylene" element={<Polyethylene />} />
           <Route path="/propylene-supplier" element={<Propylene />} />
-          <Route path="/end-to-end-transportation" element={<EndToEndTransportation />} />
           <Route path="/grains" element={<Grains />} />
           <Route path="/lentils" element={<Lentils />} />
           <Route path="/products" element={<Products />} />
 
   {/************************************** services **************************************/}
+
+         <Route path="/services" element={<Services />} />
+          <Route path="/end-to-end-transportation" element={<EndToEndTransportation />} />
          <Route path="/air-freight-forwarding" element={<AirCargo />} />
          <Route path="/ocean-freight-forwarding" element={<OceanFreight />} />
          <Route path="/road-transport" element={<RoadTransport />} />

@@ -4,6 +4,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useState, useEffect } from "react";
 
+import { motion } from 'framer-motion';
+
+
 import "./product.css";
 import { p } from "framer-motion/client";
 
@@ -178,11 +181,21 @@ const TransportProjectCargo = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/servicesImage/WhatsApp Image 2024-11-22 at 8.48.38 PM.jpeg" alt="" />
+                <img src="./servicesImage/WhatsApp Image 2024-11-22 at 8.48.38 PM.jpeg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
                 <h1 className="h1-sub-design">Expert Project Cargo & OOG Cargo Services</h1>
+                <div className="pp-part1 ">
+                  <div className="-ml-4">
+                  <h1 className="ph1">
+                  Mastering Complex Logistics with Expert Project Cargo Solutions
+                  </h1>
+                  <p>
+                  At Zenith Eclipse, we specialize in overcoming the most intricate logistical challenges through tailored project cargo solutions. Our global reputation as a leader in project cargo logistics means we don’t just meet your needs—we surpass them. With a team of experienced professionals and innovative strategies, we manage the most complex and challenging shipments, ensuring timely and safe deliveries.
+                  </p>
+                  </div>
+                </div>
               </div>
             </div>
       </div>
@@ -231,7 +244,7 @@ const TransportProjectCargo = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -244,6 +257,20 @@ const TransportProjectCargo = () => {
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>

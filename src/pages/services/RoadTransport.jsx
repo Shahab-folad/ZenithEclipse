@@ -4,6 +4,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 import { useState, useEffect } from "react";
 
+import { motion } from 'framer-motion';
+
 import "./product.css";
 import { p } from "framer-motion/client";
 
@@ -125,21 +127,22 @@ const RoadTransport = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="src/assets/servicesImage/WhatsApp Image 2024-11-22 at 9.12.12 PM.jpeg" alt="" />
+                <img src="./servicesImage/WhatsApp Image 2024-11-22 at 9.12.12 PM.jpeg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">
                 <h1 className="h1-sub-design">Truck Transport Logistics</h1>
+                <div className="pp-part1">
+                  <p className="-ml-3">
+                  At Zenith Eclipse, we are recognized for providing long-distance trucking services that ensure on-time and efficient deliveries for every shipment. Whether handling local cargo or cross-border transportation, we utilize telematics and GPS technology to optimize routes and ensure punctual deliveries. With a versatile fleet and capacity, we tailor our services to meet your evolving needs.
+                  </p>
+                </div>
               </div>
             </div>
       </div>
 {/*****************************************************************************************/}
       <div className="product-description">
-        <div className="pp-part1">
-          <p>
-          At Zenith Eclipse, we are recognized for providing long-distance trucking services that ensure on-time and efficient deliveries for every shipment. Whether handling local cargo or cross-border transportation, we utilize telematics and GPS technology to optimize routes and ensure punctual deliveries. With a versatile fleet and capacity, we tailor our services to meet your evolving needs.
-          </p>
-        </div>
+        
         <div className="pp-part1">
           <h1 className="ph1">
           Complete Road Transport Solutions for Optimal Efficiency
@@ -168,7 +171,7 @@ const RoadTransport = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className="border-b border-black px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >
@@ -181,6 +184,20 @@ const RoadTransport = () => {
                     {feature.content}
                   </div>
                 </div>}
+                {/********************** border Animation **********************/}
+                <motion.div
+                className="relative border-b-2 border-black"
+                initial={{ width: 0 }} // Initial width of the bottom border
+                transition={{ duration: 2 }} // Animation duration
+                whileInView={{ width: '100%' }}
+                viewport={{ once: true }}
+
+                style={{
+                borderBottom: '2px solid black', // Style for the border
+                overflow: 'hidden', // Prevents visual glitches
+                }}
+                >
+               </motion.div>
 
 
               </div>
