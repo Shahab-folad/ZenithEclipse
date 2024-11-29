@@ -453,7 +453,7 @@ const RailTransport = () => {
         <div className='my-20' >
           {
             features.map((feature, index) => (
-              <div key={feature.id} className=" px-5 fontR  py-2 my-5">
+              <div key={feature.id} className=" px-1 fontR  py-2 my-5">
                 <button onClick={() => toggleParagraph(index)} className="cursor-pointer flex items-center justify-between  gap-5 w-full text-start pbtn-header text-gray-800 "  >
                   {feature.header}
                   <div >

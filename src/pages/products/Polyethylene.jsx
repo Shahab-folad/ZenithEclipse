@@ -254,7 +254,7 @@ const Polyethylene = () => {
   return (
     <>
     <Navbar />
-    <div className='px-5 md:px-10 max-w-[1400px] lg:m-auto'>
+    <div className='px-1 md:px-10 max-w-[1400px] lg:m-auto'>
       <div className="product-container">
             <div className="product-header ">
               {/* ****** */}
