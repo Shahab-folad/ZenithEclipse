@@ -101,15 +101,20 @@ body{
     width: 80%;
 }
 
+
 .about-video video{
-    margin-top: -6rem;
+    margin-top: -7rem;
     width: 25%;
 }
 @media(max-width: 768px){
+    .about-right-content img{
+       display: none;
+    }
     .about-video video{
-        display: none;
+    width: 60%;
     }
 }
+
 /* @media(min-width: 768px){
     .about-right-content video{
         position: relative;

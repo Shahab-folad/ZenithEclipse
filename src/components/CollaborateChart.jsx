@@ -28,8 +28,8 @@ lg:w-inner-circle">
         </div>
       </div> */}
 
-      <div className="flex-1">
-        <img src={circle} alt="digram" />
+      <div className="flex-1 ">
+        <img src="./images/home.gif" alt="digram" />
       </div>
 
       <div className="flex-1 p-5 shadow-2xl rounded-lg my-10 mx-2">

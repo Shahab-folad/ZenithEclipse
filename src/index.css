@@ -1024,9 +1024,9 @@ body{
         z-index: 4 !important;
         margin-top: -6rem;
       }
-      @media (max-width: 426px) {
+      @media (max-width: 789px) {
         .tabs-container {
-          margin-top: -4rem;
+          margin-top: -3.7rem;
         } 
       }
       
@@ -1097,12 +1097,21 @@ body{
       }
       .tab-header{
       background-color: white;
-      font-family: 'Lora', sans-serif;
+      font-family: 'Resolve Light', sans-serif;
       height: fit-content;
       padding: 10px;
       width: 100%;
       padding: 10px;
       }
+      .tab-header2{
+        font-family: 'Resolve Light', sans-serif;
+
+        height: fit-content;
+        padding: 10px;
+        width: 100%;
+        padding: 10px;
+        }
+
       .Vehical{
         font-family: 'Cinzel', sans-serif;
         font-weight: normal;
@@ -1134,10 +1143,10 @@ body{
         
       }
       .qoute-all{
-        background-color: #003366;
+        background-color: #00274e;
         font-size: medium;
-        border-radius: 5px;
-        padding: 1rem;
+        border-radius: 2px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
       }
       @media (max-width: 320px) {
         .qoute-all{
@@ -1171,12 +1180,13 @@ body{
       }
       .vehical-qoute p{
         padding: 0.5rem;
-        font-family: 'Lora', sans-serif;
+        font-family: 'Resolve Light', sans-serif;
+
       }
       .temprature{
-        background-color: #003366;
+        background-color: #00274e;
         font-size: large;
-        border-radius: 5px;
+        border-radius: 2px;
         padding: 0.5rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -1203,7 +1213,8 @@ body{
         grid-template-columns: 50%;
         grid-row: inherit;
         justify-content: center;
-      
+        font-family: 'Resolve Light', sans-serif;
+        
       }
       @media (max-width: 426px) {
         .Book {
@@ -1220,6 +1231,16 @@ body{
       .book-p{
         padding: 0.5rem;
       }
+      .tracking-form{
+        max-width: 600px;
+        height: 400px;
+        font-family: 'Resolve Light', sans-serif;
+
+      }
+      /* .btn-radio-container{
+        padding-left: 20rem;
+      } */
+
       /************************ Content-paragraph ************************************************/
       .content-paragraph {
         text-align: left;
@@ -1707,3 +1728,4 @@ body{
   font-family: 'Cinzel', sans-serif;
   color: #003366;
 }
+

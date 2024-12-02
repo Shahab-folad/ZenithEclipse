@@ -24,6 +24,7 @@ const Footer = () => {
                         <li className="footer__links-item"><a href="#" className="footer__link">Blogs</a></li>
                     </ul>
                 </section>
+                {/* https://www.facebook.com/profile.php?id=61557081655148 */}
                 <section className="footer__cta">
                     <h2 className="footer__cta-title ">Subscribe to Our Newsletter</h2>
                     <form action="/" className="footer__form">
@@ -31,10 +32,11 @@ const Footer = () => {
                         <button type="submit" className="footer__form-button "><img src="./images/send.svg" alt="send icon" /></button>
                     </form>
                     <ul className="footer__social-medias">
-                        <li className="footer__social-media-item"><a href="#" className="footer__social-media-link"><img src="./images/facebook.svg" alt="facebook icon" /></a></li>
-                        <li className="footer__social-media-item"><a href="#" className="footer__social-media-link"><img src="./images/insta.svg" alt="instagram icon" /></a></li>
-                        <li className="footer__social-media-item"><a href="#" className="footer__social-media-link"><img src="./images/whatsapp.svg" alt="whatsapp icon" /></a></li>
-                        <li className="footer__social-media-item"><a href="#" className="footer__social-media-link"><img src="./images/twiiter.svg" alt="twitter icon" /></a></li>
+                        <li className="footer__social-media-item"><link to ></link></li>
+                        <li className="footer__social-media-item"> <Link to="https://www.facebook.com/profile.php?id=61557081655148" className="footer__social-media-link"><img src="./images/facebook.svg" alt="facebook icon" /></Link> </li>
+                        <li className="footer__social-media-item"> <Link to="https://www.instagram.com/zenitheclipseco" className="footer__social-media-link"><img src="./images/insta.svg" alt="instagram icon" /></Link> </li>
+                        <li className="footer__social-media-item"> <Link to="https://wa.me/message/N2CUPIWILQ63K1" className="footer__social-media-link"><img src="./images/whatsapp.svg" alt="whatsapp icon" /></Link> </li>
+                        <li className="footer__social-media-item"> <Link to="https://x.com/Zenitheclipseco?t=TP0eSWCmzPwC2xCjyYVItg&amp;s=09" className="footer__social-media-link"><img src="./images/twiiter.svg" alt="twitter icon" /></Link> </li>
                     </ul>
                 </section>
             </div>

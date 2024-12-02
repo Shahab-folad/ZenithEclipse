@@ -3,10 +3,20 @@
 import Navbar from "../../components/Navbar/Navbar"
 import "./contactUs.css";
 import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa'; // FontAwesome icons
+import React, { useState } from 'react';
+import countries from 'world-countries';
+import Modal from "./Modal";
+
+
 
 const ContactUs = () => {
 
+    const [selectedCountry, setSelectedCountry] = useState('');
 
+    // Handle change event when a country is selected
+    const handleCountryChange = (e) => {
+      setSelectedCountry(e.target.value);
+    };
   
 
   return (
@@ -25,24 +35,66 @@ const ContactUs = () => {
 {/*****************************************************************************************/}
             <div className="contact-images">
         {/**********************************************/}
+        <Modal
+        btn={
+          <div >
+          <img src="./contactImages/3-1.png" alt="" />
+          <h3>General</h3>
+      </div>
+        }
+        title="General Inquiries "
+        paragraph={<span>Reach out for general inquiries or learn more about Zenith Eclipse. We're here to assist with any questions or information you need!
+         <br /><a href="mailto:Info@zenitheclipse.com" class="text-blue-500 underline">
+         Info@zenitheclipse.com
+  </a>. </span>}
+        />
+        {/**********************************************/}
+        <Modal
+        btn={
+          <div >
+          <img src="./contactImages/4-1.png" alt="" />
+          <h3>Sales Team</h3>
+      </div>
+        }
+        title="Sales & Partnerships "
+        paragraph={<span>Looking to partner with us? Contact our Sales Team for product details, pricing, and partnership opportunities.
+         <br /><a href="mailto:sales@zenitheclipse.com" class="text-blue-500 underline">
+         sales@zenitheclipse.com
+  </a>. </span>}
+        />
+        {/**********************************************/}
+        <Modal
+        btn={
+          <div >
+          <img src="./contactImages/5.png" alt="" />
+          <h3>Logistics Team</h3>
+      </div>
+        }
+        title="Transport & Logistics  "
+        paragraph={<span>For transport and logistics solutions, connect with our experts. We ensure smooth and efficient delivery worldwide.
+         <br /><a href="mailto:trans@zenitheclipse.com" class="text-blue-500 underline">
+         trans@zenitheclipse.com
+  </a>. </span>}
+        />
+        {/**********************************************/}
+        <Modal
+        btn={
+          <div >
+          <img src="./contactImages/6.png" alt="" />
+          <h3>ecustomer support</h3>
+      </div>
+        }
+        title="Customer Support "
+        paragraph={<span>Need assistance? Our Customer Support Team is ready to help resolve any issues or provide guidance.
+         <br /><a href="mailto:ecustomersupport@zenitheclipse.com" class="text-blue-500 underline">
+         ecustomersupport@zenitheclipse.com
+  </a>. </span>}
+        />
+       
+       
+        {/**********************************************/}
                 <div className="contact-img">
-                    <img src="./contactImages/3-1.png" alt="" />
-                    <h3>General</h3>
-                </div>
-        {/**********************************************/}
-                 <div className="contact-img">
-                    <img src="./contactImages/4-1.png" alt="" />
-                    <h3>Sales Team</h3>
-                </div>
-        {/**********************************************/}
-                 <div className="contact-img">
-                    <img src="./contactImages/5.png" alt="" />
-                    <h3>Logistics Team</h3>
-                 </div>
-        {/**********************************************/}
-                <div className="contact-img">
-                    <img src="./contactImages/6.png" alt="" />
-                    <h3>ecustomer support</h3>
+                    
                 </div>
 
             </div>
@@ -109,13 +161,19 @@ Fill in the information required in the form, and we will get back to you within
         Country
       </label>
       <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>Afghanistan</option>
-          <option>UAE</option>
-          <option>USA</option>
-        </select>
+      <select
+        value={selectedCountry}
+        onChange={handleCountryChange}
+        className="w-full p-2 rounded focus:ring-2 focus:ring-blue-500"
+      >
+        <option value="" disabled>Select a country</option>
+        {countries.map((country, index) => (
+          <option key={index} value={country.name.common}>
+            {country.name.common}
+          </option>
+        ))}
+      </select>
         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
         </div>
       </div>
     </div>
@@ -137,9 +195,11 @@ Fill in the information required in the form, and we will get back to you within
       </label>
       <div class="relative">
         <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option>Subject</option>
-          <option>UAE</option>
-          <option>USA</option>
+          <option disabled>Subject.</option>
+          <option value={'General inquireies'}>General Inquiries</option>
+          <option value={'Sales Department'}>Sales Department</option>
+          <option value={'Logistics Department'}>Logistic Department</option>
+          <option value={'Customer Support'}>Customer Support</option>
         </select>
         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
           <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -200,24 +260,25 @@ Fill in the information required in the form, and we will get back to you within
 <div className="contact-address mb-8 ml-2">
                 
                 {/************ Phone Number ************/}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <FaPhone size={20} color="#333" />
-                <span>+96871401000</span>
+                <div className="key-operations">
+                <img src="./icons/Phone .png" alt="" className="address-img"/>
+                <p className="p-2">+96871401000</p>
                 </div>
                 {/************ Phone Number ************/}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <FaPhone size={20} color="#333" />
-                <span>+96824950652</span>
+                <div className="key-operations">
+                <img src="./icons/Mobile.png" alt=""  className="address-img"/>
+                <p className="p-2">+96824950652</p>
                 </div>
                 {/*************** Address ***************/}
-                <div className="address" style={{ display: 'flex', gap: '10px'}}>
-                <FaMapMarkerAlt size={20} color="#333" />
-                <span >Water-Front, Beach Commercial Complex 1st Floor, Office 102, shatti AI Qorom, Muscat 134, Sultanate of Oman</span>
+                <div className="address" >
+                <img src="./icons/Address.png" alt=""  className="address-img"/>
+                <p className="p-2" >Water-Front, Beach Commercial Complex 1st Floor, Office 102, shatti AI Qorom, Muscat 134, Sultanate of Oman</p>
                 </div>
             </div>
 
 {/*****************************************************************************************/}
-{/*****************************************************************************************/}   
+{/*****************************************************************************************/} 
+<Modal />  
     </div>
     </>
   );

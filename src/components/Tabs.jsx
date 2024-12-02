@@ -73,7 +73,84 @@ const Tabs =() => {
                             </div>
                       </div>
             case 'Tracking':
-                return <div></div>
+                return <div>
+            {/************************************* Tracking *************************************/}
+                             <div className="tab-header2 bg-blue-950 text-white">
+                                <p>Place a booking with just a few clicks</p>
+                            </div>
+                            <div className=" bg-white">
+                            <form action="" className='tracking-form mx-auto'>
+                                <div className='p-4 pt-10'>
+                                <input
+                                type="text"
+                                id="input-field"
+                                placeholder="Tracking No"
+                                class="px-4 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 w-full"
+                            />
+                                </div>
+             {/********************************* Radio *********************************/}
+                                <div className='flex p-4 pl-6'>
+                                <input
+                                id="option-1"
+                                type="radio"
+                                name="options"
+                                value="1"
+                                class="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300"
+                                />
+                                <label htmlFor="option-1" class="ml-2 text-sm font-medium text-gray-700">
+                                BL| Air Waybill
+                                </label>
+             {/********************************* Radio *********************************/}
+            
+                                </div>
+                                <div class="flex p-4 pl-6">
+                                <input
+                                id="option-2"
+                                type="radio"
+                                name="options"
+                                value="2"
+                                class="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300"
+                                />
+                                <label htmlFor="option-2" class="ml-2 text-sm font-medium text-gray-700">
+                                Container No
+                                </label>
+                            </div>
+             {/********************************* Radio *********************************/}
+                            <div class="flex p-4 pl-6">
+                                <input
+                                id="option-3"
+                                type="radio"
+                                name="options"
+                                value="2"
+                                class="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300 "
+                                />
+                                <label htmlFor="option-3" class="ml-2 text-sm font-medium text-gray-700">
+                                CMR No
+                                </label>
+                            </div>
+          {/********************************* Radio *********************************/}
+          <div class="flex p-4 pl-6">
+                                <input
+                                id="option-4"
+                                type="radio"
+                                name="options"
+                                value="2"
+                                class="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300"
+                                />
+                                <label htmlFor="option-3" class="ml-2 text-sm font-medium text-gray-700">
+                                Train BL No
+                                </label>
+                            </div>  
+          {/********************************* button *********************************/}
+             <div className='p-4'>
+             <button class="px-4 py-1 w-full bg-blue-950 text-white font-medium hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2">
+              Track
+            </button>
+             </div>
+                            </form>
+                            </div>
+            {/******************************************  ******************************************/}
+                </div>
             default:
                 return <div>
                             <div className="tab-header">

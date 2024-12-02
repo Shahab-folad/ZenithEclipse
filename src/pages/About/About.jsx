@@ -55,18 +55,11 @@ const About = () => {
       
     </div>
     {/****************************** Content part 2-1 ******************************/}
+    
       <div className="about-content -mb-16">
-      <div className="about-left-content">
-        <br />
-      <p className='about-left-content-p1 standard-p'>
-        Our global logistics network allows us to deliver products relibility to markets world wiide, utillizing a seamless blend of transport options, including trains, vessels, and trucks. This integrated approach ensures that our supply chain meets global standards while maintaining products freshness and quality.
-        At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
-        </p>
-        </div>
-  {/**********************************  **********************************/}
-  <div className="about-right-content ">
+      <div className="about-right-content order-2">
         {/****************** About Video ******************/}
-        <div className="about-video">
+        <div className="about-video ">
         <video preload="metadata" autoPlay muted loop playsInline >
         <source src="./AboutImage/about us.mp4" type="video/mp4" />
          Your browser does not support the video tag.
@@ -74,6 +67,18 @@ const About = () => {
         </div>
         
       </div>
+
+
+
+      <div className="about-left-content order-1 mb-32">
+        <br />
+      <p className='about-left-content-p1 standard-p'>
+        Our global logistics network allows us to deliver products relibility to markets world wiide, utillizing a seamless blend of transport options, including trains, vessels, and trucks. This integrated approach ensures that our supply chain meets global standards while maintaining products freshness and quality.
+        At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
+        </p>
+        </div>
+  {/**********************************  **********************************/}
+  
       </div>
 
 
