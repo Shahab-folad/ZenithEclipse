@@ -42,7 +42,7 @@ import TCL from "./pages/services/TCL";
 import SupplyChainSolution from "./pages/services/SupplyChainSolution";
 import SupplyChainManagementS from "./pages/services/SupplyChainManagementS";
 import LogisticOperationManagement from "./pages/services/LogisticOperationManagement";
-
+import RailwayTransport from "./pages/RailwayTransport";
 
 
 // ***********************************************************
@@ -50,6 +50,8 @@ import LogisticOperationManagement from "./pages/services/LogisticOperationManag
 import Grains from "./pages/products/Grains";
 import Lentils from "./pages/products/Lentils";
 import Products from "./pages/products/Products";
+// ************************************************************
+import Blog from "./pages/Blog/Blog";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -106,6 +108,10 @@ const App = () => {
          <Route path="/supply-chain-management-services" element={<SupplyChainManagementS />} />
          <Route path="/logistics-operations-management" element={<LogisticOperationManagement />} />
 
+  {/************************************** ************* **************************************/}
+        <Route path="/rail-rate" element={<RailwayTransport />} />
+        <Route path="/blog" element={<Blog />} />
+          
 
         </Routes>
 

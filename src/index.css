@@ -1120,6 +1120,7 @@ body{
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
         padding: 1rem;
         border-radius: 5px;
+        cursor: pointer;
        
       }
       .Vehical-container{
@@ -1728,4 +1729,19 @@ body{
   font-family: 'Cinzel', sans-serif;
   color: #003366;
 }
-
+.railway-form-container {
+  /* background-color: gray; */
+}
+.railway-form{
+  /* background-color: red; */
+  max-width: 720px;
+}
+/**************************************** fifty ****************************************/
+.fifty{
+  width: 48%;
+}
+@media (max-width: 769px){
+  .fifty{
+    width: 100%;
+  }
+}

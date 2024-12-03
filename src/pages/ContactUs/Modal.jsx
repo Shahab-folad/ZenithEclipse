@@ -13,10 +13,10 @@ export function Modal(promps) {
   const handleOpen = () => setOpen(!open);
  
   return (
-    <>
-      <div className="contact-img" onClick={handleOpen} >
+    
+      <div  onClick={handleOpen} >
         {promps.btn}
-      </div>
+     
       <Dialog open={open} handler={handleOpen} className="modal-width mx-auto ">
         <DialogHeader className="standard-h1">{ promps.title }</DialogHeader>
         <DialogBody className="standard-p">
@@ -33,7 +33,8 @@ export function Modal(promps) {
           </Button>
         </DialogFooter>
       </Dialog>
-    </>
+      </div>
+    
   );
 }
 

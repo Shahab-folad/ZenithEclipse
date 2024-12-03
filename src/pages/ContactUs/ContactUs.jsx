@@ -33,8 +33,9 @@ const ContactUs = () => {
 
 {/*****************************************************************************************/}
 {/*****************************************************************************************/}
-            <div className="contact-images">
+            <div className="contact-images ">
         {/**********************************************/}
+        <div className="contact-img">
         <Modal
         btn={
           <div >
@@ -47,8 +48,9 @@ const ContactUs = () => {
          <br /><a href="mailto:Info@zenitheclipse.com" class="text-blue-500 underline">
          Info@zenitheclipse.com
   </a>. </span>}
-        />
+        /> </div>
         {/**********************************************/}
+        <div className="contact-img">
         <Modal
         btn={
           <div >
@@ -61,8 +63,9 @@ const ContactUs = () => {
          <br /><a href="mailto:sales@zenitheclipse.com" class="text-blue-500 underline">
          sales@zenitheclipse.com
   </a>. </span>}
-        />
+        /> </div>
         {/**********************************************/}
+        <div className="contact-img">
         <Modal
         btn={
           <div >
@@ -75,8 +78,9 @@ const ContactUs = () => {
          <br /><a href="mailto:trans@zenitheclipse.com" class="text-blue-500 underline">
          trans@zenitheclipse.com
   </a>. </span>}
-        />
+        /></div>
         {/**********************************************/}
+        <div className="contact-img">
         <Modal
         btn={
           <div >
@@ -90,12 +94,11 @@ const ContactUs = () => {
          ecustomersupport@zenitheclipse.com
   </a>. </span>}
         />
+        </div>
        
        
         {/**********************************************/}
-                <div className="contact-img">
-                    
-                </div>
+                
 
             </div>
 
@@ -195,7 +198,7 @@ Fill in the information required in the form, and we will get back to you within
       </label>
       <div class="relative">
         <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-          <option disabled>Subject.</option>
+          <option value={''} disabled>Subject</option>
           <option value={'General inquireies'}>General Inquiries</option>
           <option value={'Sales Department'}>Sales Department</option>
           <option value={'Logistics Department'}>Logistic Department</option>
@@ -260,17 +263,17 @@ Fill in the information required in the form, and we will get back to you within
 <div className="contact-address mb-8 ml-2">
                 
                 {/************ Phone Number ************/}
-                <div className="key-operations">
+                <div className="key-operations py-3">
                 <img src="./icons/Phone .png" alt="" className="address-img"/>
                 <p className="p-2">+96871401000</p>
                 </div>
                 {/************ Phone Number ************/}
-                <div className="key-operations">
+                <div className="key-operations py-3">
                 <img src="./icons/Mobile.png" alt=""  className="address-img"/>
                 <p className="p-2">+96824950652</p>
                 </div>
                 {/*************** Address ***************/}
-                <div className="address" >
+                <div className="address py-3" >
                 <img src="./icons/Address.png" alt=""  className="address-img"/>
                 <p className="p-2" >Water-Front, Beach Commercial Complex 1st Floor, Office 102, shatti AI Qorom, Muscat 134, Sultanate of Oman</p>
                 </div>

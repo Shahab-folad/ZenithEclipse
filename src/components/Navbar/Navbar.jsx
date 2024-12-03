@@ -96,7 +96,9 @@ function Navbar() {
         </header>
         <div className="navbar-container">
           <div className="navbar-logo d-logo">
+          <Link to="/">
             <img src="./images/logo.png" alt="zenitheclipse Logo" width="80px" />
+            </Link>
           </div>
 {/************************************************************************************/}
 {/****************************Desktop List items**************************************/}
@@ -124,7 +126,9 @@ function Navbar() {
           <div className="top-nav">
             <div className="navbar-container">
               <div className="navbar-logo">
+              <Link to="/">
                 <img src="./images/logo.png" alt="zenitheclipse logo" className='mobile-nav-logo' width="35px" />
+                </Link>
               </div>
               <div className="extra-options">
                 <a href="#" className="search-icon m-search"><img src="search.svg" alt="Search" /></a>

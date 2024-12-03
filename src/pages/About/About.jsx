@@ -90,29 +90,31 @@ const About = () => {
       At the core of our business is commitment to innovation,, continously refining our processes to stay responsive to our clients and evolving market landscape. By harnesssing the latest technology and industry insight, we provide high-quality services, setting new benchmarks in customer satisfaction andd operational excellence.
       </p> */}
 
-      <img className='global-img' src="./AboutImage/3.png" alt="" />
+      
       <p className="global-p2 standard-p">
       Our mission is the responsibily source and supply essential commodities,  fostering sustainable growth and delivering value to customers, shareholders, employees, and comunities. Safety, environmental stewardship, and community well-being are central to our activities as we work to unify agriculture, logistics, and petrochemicals. We are committed to buillding connections that drive progress and sustainablility new standards of excellence in  our field.
       </p>
     </div>
 
     {/************************************ Team content ************************************/}
+
+
+
+
+    
     <div className="team-container ">
 
       
-      <div className='team-content'>
+      {/* <div className='team-content'> */}
         <p className="team-p1 standard-p">
         Our team is dedicated to build lasting relationships with clients by offering tailored solutions that meet the unique demands of global supply chains. With expertise in freight forwarding, contract logistics, and specialized transport, we deliver comprehensive logistics solutions that ensure timely, safe, and efficient movement of goods across borders.
         </p>
-        <br /><br />
+        <img className='global-img' src="./AboutImage/3.png" alt="" />
         <p className='team-p2 standard-p'>
         in key agricultural regions, we provide customized logistics solutions to address the spencific needs of perhsable and high-quality products. Our expertise in animal feed logistics also ensures that various types of feed are delivered safely and on sechedule to support livestock health and productivity.
         </p>
       </div>
-      <div className="team-img">
-        <img src="./AboutImage/4.png" alt="" />
-      </div>
-    </div>
+    {/* </div> */}
     {/********************************** end content **********************************/}
     <div className='end-content-container'>
       <p className='standard-p end-content-p'>

@@ -51,7 +51,7 @@ const Services = () =>{
         </div>
         <div className='m-4'>
         <CardProduct
-        title="Railway Transport"
+        title="Rail Transport"
         detail={<span>Rail Transport Solutions for Global Logistics Efficiency & Extensive Rail Network </span> }
         img="./servicesImage/WhatsApp Image 2024-11-22 at 10.01.26 PM.jpeg"
         location="/rail-transport"

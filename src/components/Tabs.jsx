@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Tabs =() => {
     const [activeTab, setActiveTab] =useState("Qoute");
@@ -16,10 +17,10 @@ const Tabs =() => {
                             <div className="Vehical-container my-col-8 p-2">
 {/******************************************* row one *************************/}
                                 
-                                    <div className="Vehical vehical-col">
+                                    <Link className="Vehical vehical-col" to="">
                                     <img src="./images/air-freight.png" className='mx-auto'  alt="some" width="50px"/>
                                     <h4 className="v-text">Air Freight</h4>
-                                    </div>
+                                    </Link>
                                     <div className="Vehical">
                                     <img src="./images/ocean-freight.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Ocean Freight</h4>
@@ -27,10 +28,10 @@ const Tabs =() => {
                                 
 {/************************************ row tow *********************************/}  
 
-                                    <div className="Vehical vehical-col">
+                                    <Link className="Vehical vehical-col" to="/rail-rate">
                                     <img src="./images/rail.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Rail Rate</h4>
-                                    </div>
+                                    </Link>
                                     <div className="Vehical">
                                     <img src="./images/truck.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Truck Rate</h4>
@@ -76,7 +77,7 @@ const Tabs =() => {
                 return <div>
             {/************************************* Tracking *************************************/}
                              <div className="tab-header2 bg-blue-950 text-white">
-                                <p>Place a booking with just a few clicks</p>
+                                <p>Track your Shipment</p>
                             </div>
                             <div className=" bg-white">
                             <form action="" className='tracking-form mx-auto'>
@@ -172,10 +173,10 @@ const Tabs =() => {
                                 
 {/************************************ row tow *********************************/}  
 
-                                    <div className="Vehical vehical-col">
+                                    <Link className="Vehical vehical-col" to="/rail-rate">
                                     <img src="./images/rail.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Rail Rate</h4>
-                                    </div>
+                                    </Link>
                                     <div className="Vehical">
                                     <img src="./images/truck.png" className='mx-auto' alt="some" width="50px"/>
                                     <h4 className="v-text">Truck Rate</h4>
