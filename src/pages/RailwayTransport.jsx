@@ -334,13 +334,7 @@ const RailwayTransport = () => {
             <p>
             At every inspection stage we furnish reports containing photos, notes and relevant test findings. This documentation keeps you informed and in charge enabling action if problems occur. Our team is also on hand for real time consultations giving tailored support to meet your requirements.
             </p>
-            {/***********************  ***********************/}
-            <h1 className="ph2">
-            Thorough. Post Flight Care:
-            </h1>
-            <p>
-            From departure preparations to post arrival care we ensure that all handling is carried out with meticulous attention, to detail and animal well-being.
-            </p>
+            
           </div>
         </div>
 

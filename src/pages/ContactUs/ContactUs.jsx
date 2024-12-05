@@ -11,12 +11,15 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 const ContactUs = (id) => {
-    const [arrow , setArrow] = useState(false);
-    const [activeId, setActiveId] = useState(null);
-    const arrowToggle = (id) =>{
-       setArrow(!arrow) 
-       setActiveId(activeId === id ? null : id); // Toggle the specific dropdown
-      };
+    const [arrowI , setArrowI] = useState(false);
+    const [arrowII , setArrowII] = useState(false);
+    const [arrowIII , setArrowIII] = useState(false);
+    const [arrowIV , setArrowIV] = useState(false);
+    const arrowToggleI = () =>{setArrowI(!arrowI)} // Toggle the specific dropdown
+    const arrowToggleII = () =>{setArrowII(!arrowII)} // Toggle the specific dropdown
+    const arrowToggleIII = () =>{setArrowIII(!arrowIII)} // Toggle the specific dropdown
+      const arrowToggleIV = () =>{setArrowIV(!arrowIV)} // Toggle the specific dropdown
+    
 
 
 
@@ -51,11 +54,11 @@ const ContactUs = (id) => {
 
         <img src="./contactImages/3-1.png" alt="" />
           <h3 className="flex gap-3 pl-16">General 
-          <IoIosArrowDown onClick={() => arrowToggle(1)} size={20} className={`${arrow && activeId === 1? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer`} />
+          <IoIosArrowDown onClick={arrowToggleI} size={20} className={`${arrowI? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer`} />
             
           </h3>
           {
-            arrow && activeId === 1?
+            arrowI?
             <div className="dropdown-modal mt-4">
           <h1 className="standard-h1">General Inquiries   </h1>
             <p className="standard-p">
@@ -94,18 +97,18 @@ const ContactUs = (id) => {
 
         <img src="./contactImages/4-1.png" alt="" />
           <h3 className="flex gap-4 pl-14">Sales Team
-          <IoIosArrowDown onClick={() => arrowToggle(2)} size={20} className={`${arrow && activeId === 2? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
+          <IoIosArrowDown onClick={arrowToggleII} size={20} className={`${arrowII? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
           
           </h3>
           {
-            arrow && activeId === 2?
+            arrowII?
             <div className="dropdown-modal mt-4">
           <h1 className="standard-h1">Sales & Partnerships  </h1>
             <p className="standard-p">
             <span>Looking to partner with us? Contact our Sales Team for product details, pricing, and partnership opportunities.
          <br /><a href="mailto:sales@zenitheclipse.com" class="text-blue-500 underline">
          sales@zenitheclipse.com
-  </a>. </span>
+  </a> </span>
             </p>
         </div>: null
        
@@ -136,18 +139,18 @@ const ContactUs = (id) => {
         <div className="contact-img">
         <img src="./contactImages/5.png" alt="" />
         <h3 className="flex gap-4 pl-10">Logistics Team
-        <IoIosArrowDown onClick={() => arrowToggle(3)} size={20} className={`${arrow && activeId === 3? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
+        <IoIosArrowDown onClick={arrowToggleIII} size={20} className={`${arrowIII? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
           
           </h3>
           {
-            arrow && activeId === 3?
+            arrowIII?
             <div className="dropdown-modal mt-4">
           <h1 className="standard-h1">Logistics Team</h1>
             <p className="standard-p">
             <span>For transport and logistics solutions, connect with our experts. We ensure smooth and efficient delivery worldwide.
          <br /><a href="mailto:trans@zenitheclipse.com" class="text-blue-500 underline">
          trans@zenitheclipse.com
-  </a>. </span>
+  </a> </span>
             </p>
         </div>: null
        
@@ -171,19 +174,19 @@ const ContactUs = (id) => {
         <div className="contact-img">
         <img src="./contactImages/6.png" alt="" />
         <h3 className="flex gap-4 pl-10">ecustomer support
-        <IoIosArrowDown onClick={() => arrowToggle(4)} size={20} className={`${arrow && activeId === 4? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
+        <IoIosArrowDown onClick={arrowToggleIV} size={20} className={`${arrowIV? "rotate-180" : 'rotate-0'} transition-all mt-1 cursor-pointer `} />
           
           </h3>
 
           {
-            arrow && activeId === 4?
+            arrowIV?
             <div className="dropdown-modal mt-4">
           <h1 className="standard-h1">ecustomer support</h1>
             <p className="standard-p">
             <span>Need assistance? Our Customer Support Team is ready to help resolve any issues or provide guidance.
          <br /><a href="mailto:ecustomersupport@zenitheclipse.com" class="text-blue-500 underline">
          ecustomersupport@zenitheclipse.com
-  </a>. </span>
+  </a> </span>
             </p>
         </div>: null
        
@@ -376,7 +379,7 @@ Fill in the information required in the form, and we will get back to you within
                 </div>
                 {/************ Phone Number ************/}
                 <div className="key-operations py-3">
-                <img src="./icons/Mobile.png" alt=""  className="address-img"/>
+                <img src="./icons/Mobile.png" alt=""  className="address-img2"/>
                 <p className="p-2">+96824950652</p>
                 </div>
                 {/*************** Address ***************/}

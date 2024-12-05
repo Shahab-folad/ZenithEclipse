@@ -29,7 +29,7 @@ lg:w-inner-circle">
       </div> */}
 
       <div className="flex-1 ">
-        <img src="./images/home.gif" alt="digram" />
+        <img className='' src="./images/Samiullah Saleh Zada _ Brothers_20241129_205430_0001_1.gif" alt="digram" />
       </div>
 
       <div className="flex-1 p-5 shadow-2xl rounded-lg my-10 mx-2">
