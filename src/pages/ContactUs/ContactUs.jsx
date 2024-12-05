@@ -63,7 +63,7 @@ const ContactUs = (id) => {
           <h1 className="standard-h1">General Inquiries   </h1>
             <p className="standard-p">
             <span>Reach out for general inquiries or learn more about Zenith Eclipse. We're here to assist with any questions or information you need!
-         <br /><a href="mailto:Info@zenitheclipse.com" class="text-blue-500 underline">
+         <br /><a href="mailto:Info@zenitheclipse.com">
          Info@zenitheclipse.com
   </a> </span>
             </p>
@@ -184,7 +184,7 @@ const ContactUs = (id) => {
           <h1 className="standard-h1">ecustomer support</h1>
             <p className="standard-p">
             <span>Need assistance? Our Customer Support Team is ready to help resolve any issues or provide guidance.
-         <br /><a href="mailto:ecustomersupport@zenitheclipse.com" class="text-blue-500 underline">
+         <br /><a href="mailto:ecustomersupport@zenitheclipse.com" class="text-blue-500 underline -ml-1">
          ecustomersupport@zenitheclipse.com
   </a> </span>
             </p>

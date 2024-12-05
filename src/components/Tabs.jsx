@@ -46,9 +46,9 @@ const Tabs =() => {
                                 <div className="qoute-all"><a href="">Qoute for all mode</a></div>
                                 <br/>
                                 <div className="temprature">
-                                    <a href="">Temperature-Controlled,</a>
-                                    <br/>
-                                    <a href="">Logistic Solution</a>
+                                <Link to="/temperature-controlled-logistics">Temperature-Controlled,
+                                        <br />
+                                        Logistic Solution</Link>
                                 </div>
                             </div>
 </div>
@@ -191,7 +191,7 @@ const Tabs =() => {
                                 <div className="qoute-all"><a href="">Qoute for all mode</a></div>
                                 <br/>
                                 <div className="temprature">
-                                    <Link to="/logistics-operations-management">Temperature-Controlled,
+                                    <Link to="/temperature-controlled-logistics">Temperature-Controlled,
                                         <br />
                                         Logistic Solution</Link>
                                 </div>
