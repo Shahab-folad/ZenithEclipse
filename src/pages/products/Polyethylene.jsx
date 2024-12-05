@@ -263,7 +263,7 @@ const Polyethylene = () => {
               </div>
               {/* ********* */}
               <div className="product-img item2">
-                <img src="./product/Polyethylene.png" alt="" />
+                <img src="./product/Polyethylene.jpg" alt="" />
               </div>
               {/* ********** */}
               <div className="product-title item3">

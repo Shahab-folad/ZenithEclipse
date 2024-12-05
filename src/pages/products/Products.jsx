@@ -232,21 +232,21 @@ const Products = () =>{
         <CardProduct
          title="Ethylene"
           detail="Premier Ethylene Solutions – Advancing Industrial Excellence"
-          img="./product/Ethylene.png"
+          img="./product/Ethylene.jpg"
           location="/ethylene-solution"
           />
         </div><div className='m-4'>
         <CardProduct
         title="Propylene"
         detail="Premier Propylene Solutions – Leading the Way in Industrial Innovation"
-        img="./product/Propylene.png"
+        img="./product/Propylene.jpg"
         location="/propylene-supplier"
         />
         </div><div className='m-4'>
         <CardProduct
         title="Polyethylene"
         detail={<span>Premier Polyethylene Solutions – Pioneering Excellence... </span> }
-        img="./product/Polyethylene.png"
+        img="./product/Polyethylene.jpg"
         location="/polyethylene"
         />
         </div>

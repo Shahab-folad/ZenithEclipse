@@ -16,8 +16,18 @@ export function Modal(promps) {
     
       <div  onClick={handleOpen} >
         {promps.btn}
+
+          {
+            promps.arToggle && promps.arId === promps.id?
+            <div className="dropdown-modal mt-4">
+          <h1 className="standard-h1">{ promps.title }  </h1>
+            <p className="standard-p">{promps.paragraph}</p>
+        </div>: null
+       
+          }
+        
      
-      <Dialog open={open} handler={handleOpen} className="modal-width mx-auto ">
+      {/* <Dialog open={open} handler={handleOpen} className="modal-width mx-auto ">
         <DialogHeader className="standard-h1">{ promps.title }</DialogHeader>
         <DialogBody className="standard-p">
         {promps.paragraph}
@@ -32,7 +42,7 @@ export function Modal(promps) {
             <span>Close</span>
           </Button>
         </DialogFooter>
-      </Dialog>
+      </Dialog> */}
       </div>
     
   );

@@ -74,10 +74,10 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 250px;
+    width: 270px;
+    height: fit-content;
     overflow: hidden;
     text-align: center;
-    cursor: pointer;
     padding: 1rem;
     margin: 1rem;
     border-radius: 3px;
@@ -147,7 +147,11 @@ body{
         display: none;
     }
 }
-.modal-width{
+/* .modal-width{
+    position: relative;
     margin: 1rem;
     width: 94vw;
-}
+} */
+ /* .dropdown-modal{
+    display: none;
+ } */

@@ -216,7 +216,7 @@ As global leaders in oat production, Zenith Eclipse Co offers unmatched expertis
               </div>
               {/* ********** */}
               <div className="product-title item3">
-                <h1 className="h1-sub-design">Top Supplier of Premium Oats <br /> Leading Globa <br />Producer and Distributor</h1>
+                <h1 className="h1-sub-design">Top Supplier of Premium Oats <br /> Leading Global Producer and Distributor</h1>
               </div>
             </div>
       </div>

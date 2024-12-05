@@ -6,7 +6,10 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__container">
                 <div className="footer__logo ">
+                    <Link to="/">
+                    
                     <img src="./images/logo.png" alt="logo" className='m-auto' />
+                    </Link>
                 </div>
                 <p className="footer__description font-Resolve">
                 Zenith Eclipse is a leading international trading and logistics company, offering comprehensive solutions for global markets. Our expertise extends to air charter services and ocean transport, ensuring safe, efficient, and reliable delivery of goods worldwide. We collaborate with fully licensed and certified air carriers and shipping operators, adhering to international aviation and maritime regulations. Zenith Eclipse does not operate aircraft or vessels directly; all services are provided through trusted third-party carriers, fully insured for cargo  safety. Our operations strictly comply with European Union, U.S., and international laws to maintain the highest standards of safety and reliability.
